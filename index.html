@@ -127,7 +127,6 @@
   const msg=document.getElementById('alarmMsg');
   const dot=document.getElementById('statusDot');
   const statusText=document.getElementById('statusText');
-  const content=document.getElementById('main-content');
 
   function render(){
     display.innerHTML='';
@@ -164,7 +163,7 @@
     msg.className='alarm-message success';
     setTimeout(()=>{
       overlay.classList.add('dismissed');
-      content.classList.add('visible');
+      document.getElementById('main-content').classList.add('visible');
     },1000);
   }
 
